@@ -67,5 +67,5 @@ app.post('/send', (req, res) => {
       res.render('contact', {msg:'Email has been sent'});
   });
   });
-
-app.listen(3000, () => console.log('Server started...'));
+ var port = process.env.PORT || 3000;
+app.listen(port, () => console.log('Server started...'));
